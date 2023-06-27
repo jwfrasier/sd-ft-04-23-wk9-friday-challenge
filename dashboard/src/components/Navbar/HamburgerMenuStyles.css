@@ -1,0 +1,33 @@
+.hamburger-vertical span {
+  width: 100%;
+  transform-origin: center;
+}
+
+.hamburger-vertical span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger-vertical span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-vertical span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.hamburger-horizontal span {
+  width: 100%;
+  transform-origin: center;
+}
+
+.hamburger-horizontal span:nth-child(1) {
+  transform: translateY(0) rotate(0);
+}
+
+.hamburger-horizontal span:nth-child(2) {
+  opacity: 1;
+}
+
+.hamburger-horizontal span:nth-child(3) {
+  transform: translateY(0) rotate(0);
+}
