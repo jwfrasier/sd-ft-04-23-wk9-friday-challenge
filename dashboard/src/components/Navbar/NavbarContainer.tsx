@@ -27,11 +27,7 @@ const NavbarContainer = ({
         !isHamburgerOpen && "active"
       }`}
     >
-      <div
-        className={`flex items-center justify-${
-          !isHamburgerOpen ? "between" : "start"
-        } px-4 py-2 `}
-      >
+      <div className={`flex items-center justify-between px-4 py-2 `}>
         <div
           className={`flex items-center ease-in-out duration-300${
             isHamburgerOpen ? "translate-x-0 " : "translate-x-full"
@@ -39,7 +35,7 @@ const NavbarContainer = ({
         >
           <img src={Apple} alt="Logo" className="w-10 h-10" />
           <div
-            className={`ml-2 text-white font-bold text-lg ${
+            className={`ml-2 w-[12rem] text-white font-bold text-lg ${
               isHamburgerOpen ? "hidden" : ""
             }`}
           >

@@ -14,7 +14,7 @@ const NavbarLinks = ({
   isSelected,
 }: NavbarLinksProps): JSX.Element => {
   return (
-    <div className={`flex items-center flex-grow px-2 py-5 `}>
+    <div className={`flex items-center flex-grow pl-2 py-5 `}>
       <img src={icon} alt="" className={`w-6 h-6 mr-2 ml-2`} />
       <p
         id={name}
