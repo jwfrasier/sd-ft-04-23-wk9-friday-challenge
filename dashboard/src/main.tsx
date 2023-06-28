@@ -6,7 +6,7 @@ import "tailwindcss/tailwind.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <div className="bg-white">
+    <div className="bg-white flex">
       <App />
     </div>
   </React.StrictMode>

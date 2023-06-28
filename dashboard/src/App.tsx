@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import NavbarContainer from "./components/Navbar/NavbarContainer";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   const [selectedLink, setSelectedLink] = useState<string | null>(null);
@@ -18,6 +19,7 @@ function App() {
         isHamburgerOpen={isHamburgerOpen}
         toggleHamburger={toggleHamburger}
       />
+      <Dashboard />
     </>
   );
 }

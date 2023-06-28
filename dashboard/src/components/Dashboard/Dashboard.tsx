@@ -5,9 +5,10 @@ import { TaskTable } from "../TaskTable/TaskTable";
 const Dashboard = () => {
   return (
     <div>
+      {/* <Dashboard /> */}
       <MetricCards />
-      <TaskTable />
-      <EmployeeTable />
+      {/* <TaskTable />
+      <EmployeeTable /> */}
     </div>
   );
 };
