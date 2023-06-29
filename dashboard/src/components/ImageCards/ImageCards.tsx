@@ -10,7 +10,7 @@ const ImageCards = ({
   rounded,
 }: RoundedImage): JSX.Element => {
   const roundedImg = rounded
-    ? "rounded-full object-cover object-center h-10"
+    ? "rounded-full object-cover object-center h-10 w-10"
     : "rounded-lg object-cover object-center h-10";
 
   return (

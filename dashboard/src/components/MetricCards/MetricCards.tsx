@@ -1,36 +1,44 @@
 import SmallCard from "../Cardcomponents/SmallCard";
-
+import lightbulb from "../../assets/icons8-lightbulb-50.png";
+import customers from "../../assets/icons8-b-customers-50.png";
+import car from "../../assets/icons8-car-50.png";
 export const MetricCards = () => {
   const dogggos = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      rounded: true,
-      smallerText: "Big woow",
-      largeText: "Woofer",
+      imageSrc: lightbulb,
+      icon: true,
+      smallerText: "Sales",
+      largeText: "1,034",
       width: "w-1/3",
+      titleHighlight: true,
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80",
+      imageSrc: customers,
       icon: true,
-      smallerText: "Brown wowow",
-      largeText: "Smoop",
+      smallerText: "Active Accounts",
+      largeText: "2,300",
       width: "w-1/3",
+      titleHighlight: true,
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80",
+      imageSrc: car,
       icon: true,
-      smallerText: "Brown wowow",
-      largeText: "Smoop",
-      width: "w-2/3",
+      smallerText: "Drivers",
+      largeText: "23,000",
+      width: "w-1/3",
+      titleHighlight: true,
+    },
+    {
+      imageSrc: car,
+      icon: true,
+      smallerText: "Drivers",
+      largeText: "23,000",
+      width: "w-1/3",
+      titleHighlight: true,
     },
   ];
   return (
-    <div
-      className={`flex justify-center flex-row gap-4 ml-[10rem] my-5 w-full`}
-    >
+    <div className={`flex justify-center flex-row gap-4 ml-[7rem] my-5 w-full`}>
       {dogggos.map((dogs) => (
         <SmallCard {...dogs} />
       ))}
